@@ -41,13 +41,20 @@ for (let i = 0; i < numeriCasuali.length; i++) {
 
 // gestione del countdown
 // secondi di parteza
-let secondi = 5;
+let secondi = 5 + 1;
 
 const countdown = setInterval(() => {
 
-    // SE il countdown arriva a zero i numeri spariscono 
+    // SE il countdown arriva a zero
     if (secondi === 0) {
+        // cambia il testo
         instructions.innerText = "Ora inserisci i numeri!";
+        // sparicse il countdown
+        countdownElement.classList.add("d-none");
+        // spariscono i numeri generati
+        numbersList.classList.add("d-none");
+        // appaiono gli input con il tasto conferma
+        form.classList.remove("d-none");
 
     }
     // ALTRIMENTI continia il countdown
