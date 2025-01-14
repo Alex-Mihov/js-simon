@@ -31,8 +31,11 @@ for (let i = 0; i < 5; i++) {
 console.log( numeriCasuali); 
 
 // mostro i numeri generati in pagina 
-for () {
-
+for (let i = 0; i < numeriCasuali.length; i++) {
+    // creazione costante che creale l'elemento li
+    const li = document.createElement("li");
+    li.append(numeriCasuali[i]);
+    numbersList.appendChild(li);
 }
 
 // gestione del countdown
